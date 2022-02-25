@@ -1,0 +1,49 @@
+using System;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Doctanslate
+{
+    class Program 
+    {
+        static readonly string route = "/batches";
+        static readonly string endpoint = "https://doctranscion.cognitiveservices.azure.com/translator/text/batch/v1.0";
+        static readonly string key = "6a0a5c61be774a79a327356178952d22";
+
+        static readonly string json = ("" + 
+            "{\"inputs\": " + 
+                "[{\"source\": " + 
+                    "{\"sourceUrl\": \"https://doctranscionstorage.blob.core.windows.net/inputdocs?sp=rl&st=2022-02-25T16:30:56Z&se=2022-02-26T16:30:56Z&sv=2020-08-04&sr=c&sig=GmHJ0KT%2BcglJZn3KnaVZX8ulFj7fbVizK9OiV5fTsgE%3D\"," + 
+                     "\"storageSource\": \"AzureBlob\"" + 
+                "}," + 
+            "\"targets\": " +
+                "[{\"targetUrl\": \"https://doctranscionstorage.blob.core.windows.net/translateddocs?sp=cwl&st=2022-02-25T16:38:18Z&se=2022-02-26T16:38:18Z&sv=2020-08-04&sr=c&sig=x43bRNuNIAcFBHc9vt5h90t41kQALwslnuqD9coQy8g%3D\"," + 
+                   "\"storageSource\": \"AzureBlob\"," + 
+                    "\"language\": \"fr\"}]}]}");
+
+
+        static async Task Main(string[] args) 
+        {
+            using HttpClient client = new HttpClient();
+            using HttpRequestMessage request = new HttpRequestMessage(); 
+            {
+                StringContent data = new StringContent(json, Encoding.UTF8, "application/json");
+            
+                request.Method = HttpMethod.Post;
+                request.RequestUri = new Uri(endpoint + route);
+                request.Headers.Add("Ocp-Apim-Subscription-Key", key);
+                request.Content = data;
+
+                HttpResponseMessage response = await client.SendAsync(request);
+                string result = response.Content.ReadAsStringAsync().Result;
+                if (response.IsSuccessStatusCode) 
+                {
+                    Console.WriteLine($ "Operation successful with status code: {response.StatusCode}");
+                } 
+                else 
+                    Console.Write($ "Error occurred. Status code: {response.StatusCode}");
+            }
+        }
+    }
+}
