@@ -2,9 +2,10 @@ using System;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-
+  
 namespace Doctanslate
 {
+    //Program to convert one language to another
     class Program 
     {
         static readonly string route = "/batches";
