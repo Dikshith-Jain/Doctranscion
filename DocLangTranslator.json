@@ -1,0 +1,15 @@
+{
+    "id": "/subscriptions/51964319-bdb6-4cf2-a8b1-cde5da72b88a/resourceGroups/Analytics_Resource/providers/Microsoft.CognitiveServices/accounts/DocLangTranslator",
+    "name": "DocLangTranslator",
+    "type": "Microsoft.CognitiveServices/accounts",
+    "location": "southeastasia",
+    "tags": {},
+    "kind": "TextTranslation",
+    "sku": {
+        "name": "S1"
+    },
+    "identity": {
+        "type": "None",
+        "userAssignedIdentities": {}
+    }
+}
