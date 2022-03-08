@@ -9,8 +9,8 @@ namespace Doctanslate
     class Program 
     {
         static readonly string route = "/batches";
-        static readonly string endpoint = "https://doctranscion.cognitiveservices.azure.com/translator/text/batch/v1.0";
-        static readonly string key = "6a0a5c61be774a79a327356178952d22";
+        static readonly string endpoint = "https://doclangtranslator.cognitiveservices.azure.com/translator/text/batch/v1.0";
+        static readonly string key = "26d5286d05d04497b2e0cec784773312";
 
         static readonly string json = ("" + 
             "{\"inputs\": " + 
