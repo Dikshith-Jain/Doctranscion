@@ -24,7 +24,7 @@ To perform this entire translation process, here are the major steps, one needs 
 ###### Step 1
 
 The first step is to login into the Azure portal and creates an instance of the Translator service.
-
+![This is an image](/storage/emulated/0/DCIM/Screenshots/IMG_20220310_204740.jpg)
 Clicking on Create will open up a new page, furnish all the details and click on the Review + Create button. Doing this will create an instance of a Translator service.
 
 ###### Step 2
