@@ -1,10 +1,10 @@
 # DocLangTranslator
 
-Getting Started With Azure Translator Service
+## Getting Started With Azure Translator Service
 
 This service helps us to translate documents from one language to another and at the same time, it retains the formatting and the structure of the source document. So, let’s say, if any text in the source document is in italics, then the newly translated document, will also have the text in italics.
 
-Key Features of Translator Service
+## Key Features of Translator Service
 
 Let’s have a look at a few of the key features, of the Translator service,
 
