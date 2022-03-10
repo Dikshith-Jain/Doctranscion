@@ -8,15 +8,17 @@ This service helps us to translate documents from one language to another and at
 
 Let’s have a look at a few of the key features, of the Translator service,
 
-• Auto-detection of the language of the source document
-• Translates large files
-Translates multiple files in a shot
-Preserves formatting of the source document
-Supports custom translations
-Supports custom glossaries
-Supported document types – pdf, csv, html/htm, doc/docx, msg, rtf, txt, etc.
-Implementation can be done using C#/Python as SDKs are available. Supports REST API too.
-How to Translate 
+- Auto-detection of the language of the source document
+- Translates large files
+- Tanslates multiple files in a shot
+- Preserves formatting of the source document
+- Supports custom translations
+- Supports custom glossaries
+- Supported document types – pdf, csv, html/htm, doc/docx, msg, rtf, txt, etc.
+- Implementation can be done using C#/Python as SDKs are available. Supports REST API too.
+
+## How to Translate 
+
 To perform this entire translation process, here are the major steps, one needs to take care of,
 
 ###### Step 1
