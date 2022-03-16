@@ -38,7 +38,7 @@ Grabbing the key and the endpoint of the Translator service,
 Create an instance of Azure Storage service as we need to create two containers.
 ![1647196327562](https://user-images.githubusercontent.com/73302381/158074510-15578501-70a8-4560-a0f5-b1c98ffee115.jpg)
 -The first container named inputdocs - holds source documents, which need to be translated
--The second container named translateddocs - holds target documents, which are the translated documents
+-The second container named translateddocs - holds target documents, which are the translated document
 -Once containers are created, you could see them listed under your storage account as shown below:
 
 ###### Step 4
