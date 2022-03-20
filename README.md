@@ -61,4 +61,4 @@ Now comes the C# code, which utilizes all the information from the above steps.
 ###### Step 7 - Sample input(English) and output document(French)
 
 On executing the above C# code, you will notice that translated files got added to translateddocs container as shown below.
-![Screenshot (7)](https://user-images.githubusercontent.com/73302381/158076481-264f0c23-f127-43bb-bdc7-2768b9daad95.png)
+![Screenshot (9)](https://user-images.githubusercontent.com/73302381/159168062-4f2199e2-d6e1-4976-a360-73ccabedec23.png)
